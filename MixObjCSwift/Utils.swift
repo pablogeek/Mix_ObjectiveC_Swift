@@ -7,15 +7,15 @@
 //
 
 import Foundation
-import ViewController
 
-class MyUtils : NSObject{
+
+class MyUtils : NSObject {
 
     init(){
         
     }
     
-    func byValueOrReference(num1 : Int) {
-        var a = ViewController()
+    func sum(num1 : Int, num2: Int) ->Int {
+        return num1+num2
     }
 }
