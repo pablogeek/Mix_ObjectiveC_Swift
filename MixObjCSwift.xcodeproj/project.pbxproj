@@ -13,6 +13,7 @@
 		6E76E73E193DE39500776C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E76E73C193DE39500776C0A /* Main.storyboard */; };
 		6E76E740193DE39500776C0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E76E73F193DE39500776C0A /* Images.xcassets */; };
 		6E76E74C193DE39500776C0A /* MixObjCSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E74B193DE39500776C0A /* MixObjCSwiftTests.m */; };
+		6E76E757193DE3A700776C0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E756193DE3A700776C0A /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		6E76E745193DE39500776C0A /* MixObjCSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixObjCSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E76E74A193DE39500776C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E76E74B193DE39500776C0A /* MixObjCSwiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixObjCSwiftTests.m; sourceTree = "<group>"; };
+		6E76E755193DE3A700776C0A /* MixObjCSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixObjCSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E76E756193DE3A700776C0A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				6E76E73C193DE39500776C0A /* Main.storyboard */,
 				6E76E73F193DE39500776C0A /* Images.xcassets */,
 				6E76E732193DE39500776C0A /* Supporting Files */,
+				6E76E756193DE3A700776C0A /* Utils.swift */,
+				6E76E755193DE3A700776C0A /* MixObjCSwift-Bridging-Header.h */,
 			);
 			path = MixObjCSwift;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				6E76E73B193DE39500776C0A /* ViewController.m in Sources */,
 				6E76E738193DE39500776C0A /* AppDelegate.m in Sources */,
 				6E76E735193DE39500776C0A /* main.m in Sources */,
+				6E76E757193DE3A700776C0A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,9 +338,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixObjCSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixObjCSwift/MixObjCSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -343,9 +352,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixObjCSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixObjCSwift/MixObjCSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
